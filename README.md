@@ -16,8 +16,6 @@ Basic class on Ansible useing Vagrant and Virtualbox
 <p>Installing Virtualbox</p>
 
 
-
-
 <h1>Installing Vagrant</h1>
 
 <p>First thing, you need to download vagrant setup from <a href="http://www.vagrantup.com/downloads.html">http://www.vagrantup.com/downloads.html</a>, and then run it.</p>
