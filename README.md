@@ -7,11 +7,15 @@ Basic class on Ansible useing Vagrant and Virtualbox
 
 <h1>Windows Environment</h1>
 
-<p>To configure Vagrant inside Windows environment, we should to follow the following sections</p>
+<p>To configure Vagrant inside Windows environment, we should follow the below sections in order</p>
 
 <p>Installing Vagrant</p>
 
 <p>Installing Git </p>
+
+<p>Installing Virtualbox</p>
+
+
 
 
 <h1>Installing Vagrant</h1>
@@ -20,13 +24,14 @@ Basic class on Ansible useing Vagrant and Virtualbox
 
 <p>Setup wizard is straightforward, just it will ask to accept license agreement and the path to install, as you will need to use command line, please choose short path as you can, for example in our case, we will use “D:\Vagrant”, it might ask you to restart at the end of setup.</p>
 
-<h1>Installing Oracle VirtualBox</h1>
-
-<p>You need now to download VirtualBox, use the following link to download the latest release of VirtualBox <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
-
 <p>The setup here is some longer but if you just click “Next” without any changes, it will be fine.</p>
 
 <h1>Installing Git</h1>
 
 <p>Download Git commandline setup from <a href="https://github.com/git-for-windows/git/releases">https://github.com/git-for-windows/git/releases</a>, and then run it.</p>
 
+<h1>Installing VirtualBox</h1>
+
+<p>You need now to download VirtualBox, use the following link to download the latest release of VirtualBox <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
+
+<p>The setup here is some longer but if you just click “Next” without any changes, it will be fine.</p>
