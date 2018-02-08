@@ -1,16 +1,16 @@
 # Vagrant_Ansible_Class
-Basic class on Ansible useing Vagrant and Virtualbox
+Basic class on Ansible using Vagrant and Virtualbox
 
 <h1>Introduction</h1>
 
 <p>Vagrant designed to run through multiple platforms including currently Mac OS X, Microsoft Windows, Debian, Ubuntu, CentOS, RedHat and Fedora, in this document we will handle how to configure and run virtual development environment through Vagrant from scratch to up and running, on Windows environments.</p>
 
-<p> VirtualBox is an Oracle product that allows you to run virtual guests on your machine for development.  Vagrant understands how to call VirtualBox to create an instance on a private network, behind a NAT, on your machine so you can eaisly do development </p>
+<p> VirtualBox is an Oracle product that allows you to run virtual guests on your machine for development.  Vagrant understands how to call VirtualBox to create an instance on a private network, behind a NAT, on your machine so you can easily do development </p>
 
 
 <h1>Installing the Development Windows Environment</h1>
 
-<p>To install our envriuoment we should follow the below sections in order</p>
+<p>To install our environment we should follow the below sections in order</p>
 
 <p>Installing Vagrant</p>
 
@@ -31,11 +31,11 @@ Basic class on Ansible useing Vagrant and Virtualbox
 
 <h2>Installing Git</h2>
 
-<p>Download Git commandline setup from <a href="https://github.com/git-for-windows/git/releases">https://github.com/git-for-windows/git/releases</a>, and then run it.</p>
+<p>Download Git command line setup from <a href="https://github.com/git-for-windows/git/releases">https://github.com/git-for-windows/git/releases</a>, and then run it.</p>
 
-<p> Alernative <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> </p>
+<p> Alternative <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> </p>
 
-<p>You may need to update your path so that you can find git on the commandline</p>
+<p>You may need to update your path so that you can find git on the command line</p>
 
 <p>On windows 10 go to this url for help:  <a href="https://www.java.com/en/download/help/path.xml">https://www.java.com/en/download/help/path.xml</a></p>
 
@@ -57,7 +57,7 @@ Basic class on Ansible useing Vagrant and Virtualbox
 
 <p>This will download the Vagrant file and allow us to create your new VirtualBox VM</p>
 
-<p>Once the clone has completed cd to the target directory</p>
+<p>Once the clone has completed, 'cd' to the target directory</p>
 
 <p>We need to download the working image for our VM before we can start our instance</p>
 
@@ -125,12 +125,11 @@ Bringing machine 'default' up with 'virtualbox' provider...
 <p>  Using putty access 127.0.0.1:2222, the user is vagrant, the password is vagrant.
 
 
-
 <h1>Clean up your vagrant install</h1>
 
-<p>When you are ready to finish the excersize you should remove your VM</p>
+<p>When you are ready to finish the exercise you should remove your VM</p>
 
-<p>In order to do this run the follow command from the orginal directory 'vagrant destroy'  you will have to answer 'y' to complete the destruction</p>
+<p>In order to do this run the follow command from the original directory 'vagrant destroy'  you will have to answer 'y' to complete the destruction</p>
 
 ```
 C:\Users\panik\Dropbox\EMC\git\Vagrant_Ansible_Class>vagrant destroy
