@@ -61,6 +61,7 @@ Basic class on Ansible useing Vagrant and Virtualbox
 
 <p>We need to download the working image for our VM before we can start our instance</p>
 
+```
 C:\Users\panik\Dropbox\EMC\git\Vagrant_Ansible_Class>vagrant box add precise32 http://files.vagrantup.com/precise32.box
 ==> box: Box file was not detected as metadata. Adding it directly...
 ==> box: Adding box 'precise32' (v0) for provider:
@@ -71,7 +72,7 @@ C:\Users\panik\Dropbox\EMC\git\Vagrant_Ansible_Class>vagrant box add precise32 h
 
 <p>run the following command to download the base image: 'vagrant box add precise32 http://files/vagrantup.com/precise32.box'</p>
 
-```
+
 
 <p>You may have to approve the creation of a network adapter on your system say yes to any questions, this does not compromise your OS in any way</p>
 
