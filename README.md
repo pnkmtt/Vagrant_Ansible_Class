@@ -53,9 +53,10 @@ Basic class on Ansible useing Vagrant and Virtualbox
 
 <p>Now that we have everyting installed we need to download the required Vagrant files</p>
 
-<p>From a new directory and on the command line run this command: git clone https://github.com/pnkmtt/Vagrant_Ansible_Class</p>
+<p>From a new directory and on the command line run this command: 'git clone https://github.com/pnkmtt/Vagrant_Ansible_Class'</p>
 
 <p>This will download the Vagrant file and allow us to create your new VirtualBox VM</p>
+
 
 <p>Once the clone has completed go to the target directory and run: vagrant up</p>
 
@@ -109,5 +110,19 @@ Bringing machine 'default' up with 'virtualbox' provider...
 
 <p>  Using putty access 127.0.0.1:2222, the user is vagrant, the password is vagrant.
 
+
+<h1>Clean up your vagrant install</h1>
+
+<p>When you are ready to finish the excersize you should remove your VM</p>
+
+<p>In order to do this run the follow command from the orginal directory 'vagrant destroy'  you will have to answer 'y' to complete the destruction</p>
+
+```
+C:\Users\panikm\Dropbox\EMC\git\Vagrant_Ansible_Class>vagrant destroy
+    default: Are you sure you want to destroy the 'default' VM? [y/N] y
+==> default: Forcing shutdown of VM...
+==> default: Destroying VM and associated drives...
+
+```
 
 
