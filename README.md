@@ -123,15 +123,14 @@ C:\Users\panik\Dropbox\git\Vagrant_Ansible_Class>Bringing machine 'default' up w
 <p>We need to have ansible installed on our new host run the following commands to install Ansible and its dependicies</p>
 
 ```
-#sudo apt-get update
-#sudo apt-get install software-properties-common
-#sudo apt-get install python-software-properties
-#sudo apt-get install build-essential libssl-dev libffi-dev python-dev
-#sudo apt-add-repository ppa:ansible/ansible
-#sudo apt-get update
+sudo apt-get update -y
+sudo apt-get install software-properties-common -y
+sudo apt-get install python-software-properties -y
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible -y
 
-#sudo apt-get install ansible
-#
+```
 
 <h1>Clean up your Vagrant install</h1>
 
