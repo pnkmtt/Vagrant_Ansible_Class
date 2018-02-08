@@ -28,6 +28,7 @@ Basic class on Ansible useing Vagrant and Virtualbox
 
 <p>Download Git commandline setup from <a href="https://github.com/git-for-windows/git/releases">https://github.com/git-for-windows/git/releases</a>, and then run it.</p>
 
+<p> Alernative <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> </p>
 <h1>Installing VirtualBox</h1>
 
 <p>You need now to download VirtualBox, use the following link to download the latest release of VirtualBox <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
