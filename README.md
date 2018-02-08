@@ -21,7 +21,7 @@ Basic class on Ansible useing Vagrant and Virtualbox
 <p>Installing Putty</p>
 
 
-<h1>Installing Vagrant</h1>
+<h2>Installing Vagrant</h2>
 
 <p>First thing, you need to download vagrant setup from <a href="http://www.vagrantup.com/downloads.html">http://www.vagrantup.com/downloads.html</a>, and then run it.</p>
 
@@ -29,18 +29,23 @@ Basic class on Ansible useing Vagrant and Virtualbox
 
 <p>The setup here is some longer but if you just click “Next” without any changes, it will be fine.</p>
 
-<h1>Installing Git</h1>
+<h2>Installing Git</h2>
 
 <p>Download Git commandline setup from <a href="https://github.com/git-for-windows/git/releases">https://github.com/git-for-windows/git/releases</a>, and then run it.</p>
 
 <p> Alernative <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> </p>
-<h1>Installing VirtualBox</h1>
+
+<p>You may need to update your path so that you can find git on the commandline</p>
+
+<p>On windows 10 go to this url for help:  <a href="https://www.java.com/en/download/help/path.xml">https://www.java.com/en/download/help/path.xml</a></p>
+
+<h2>Installing VirtualBox</h2>
 
 <p>You need now to download VirtualBox, use the following link to download the latest release of VirtualBox <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
 
 <p>The setup here is some longer but if you just click “Next” without any changes, it will be fine.</p>
 
-<h1>Installing Putty</h1>
+<h2>Installing Putty</h2>
 
 <p>You need now to download Putty, use the following link to download the latest release of Putty <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</a></p>
 
@@ -56,5 +61,5 @@ Basic class on Ansible useing Vagrant and Virtualbox
 
 <p>  Using putty access 127.0.0.1:2222, the user is vagrant, the password is vagrant.
 
-    
+
 
