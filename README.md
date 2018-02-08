@@ -120,7 +120,7 @@ C:\Users\panik\Dropbox\git\Vagrant_Ansible_Class>Bringing machine 'default' up w
 
 <h1>Installing Ansible on your new VM</h1>
 
-<p>We need to have ansible installed on our new host run the following commands to install Ansible and its dependicies. Not automating this to show the package install </p>
+<p>We need to have ansible installed on our new host run the following commands to install Ansible and its dependicies. Not automating this to show the package install process </p>
 
 ```
 sudo apt-get update -y
