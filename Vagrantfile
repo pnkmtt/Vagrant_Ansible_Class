@@ -7,8 +7,9 @@
 # VirtualBox modifyvm docs: http://www.virtualbox.org/manual/h08.html#vboxmanage-modifyvm
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "precise32"
-  config.vm.hostname = "myprecise.box"
+  config.vm.box = "v0rtex/xenial64-iso"
+  #config.vm.box = "ubuntu/xenial64"
+  config.vm.hostname = "myxenial64.box"
   config.vm.network :private_network, ip: "192.168.0.42"
 
   config.vm.provider :virtualbox do |vb|
