@@ -51,21 +51,34 @@ Basic class on Ansible useing Vagrant and Virtualbox
 
 <h1> Creating your Vagrant VM</h1>
 
-<p>Now that we have everyting installed we need to download the required Vagrant files</p>
+<p>Now that we have everything installed we need to download the required Vagrant files</p>
 
 <p>From a new directory and on the command line run this command: 'git clone https://github.com/pnkmtt/Vagrant_Ansible_Class'</p>
 
 <p>This will download the Vagrant file and allow us to create your new VirtualBox VM</p>
 
+<p>Once the clone has completed cd to the target directory</p>
 
-<p>Once the clone has completed go to the target directory and run: vagrant up</p>
+<p>We need to download the working image for our VM before we can start our instance</p>
 
-<p>You may have to approve the creationg of a network adapter on your system say yes to any questions, this does not compromise your OS in any way</p>
+C:\Users\panik\Dropbox\EMC\git\Vagrant_Ansible_Class>vagrant box add precise32 http://files.vagrantup.com/precise32.box
+==> box: Box file was not detected as metadata. Adding it directly...
+==> box: Adding box 'precise32' (v0) for provider:
+    box: Downloading: http://files.vagrantup.com/precise32.box
+    box: Progress: 100% (Rate: 3664k/s, Estimated time remaining: --:--:--)
+==> box: Successfully added box 'precise32' (v0) for 'virtualbox'!
+```
+
+<p>run the following command to download the base image: 'vagrant box add precise32 http://files/vagrantup.com/precise32.box'</p>
+
+```
+
+<p>You may have to approve the creation of a network adapter on your system say yes to any questions, this does not compromise your OS in any way</p>
 
 Example output from 'vagrant up'
 
 ```
-C:\Users\panikm\Dropbox\EMC\git\Vagrant_Ansible_Class>vagrant up
+C:\Users\panik\Dropbox\EMC\git\Vagrant_Ansible_Class>vagrant up
 Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: Importing base box 'precise32'...
 ==> default: Matching MAC address for NAT networking...
@@ -103,12 +116,13 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: Setting hostname...
 ==> default: Configuring and enabling network interfaces...
 ==> default: Mounting shared folders...
-    default: /vagrant => C:/Users/panikm/Dropbox/EMC/git/Vagrant_Ansible_Class
+    default: /vagrant => C:/Users/panik/Dropbox/EMC/git/Vagrant_Ansible_Class
 ```
 
 <h1> Accessing your new VirtualBox based VM </h1>
 
 <p>  Using putty access 127.0.0.1:2222, the user is vagrant, the password is vagrant.
+
 
 
 <h1>Clean up your vagrant install</h1>
@@ -118,7 +132,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 <p>In order to do this run the follow command from the orginal directory 'vagrant destroy'  you will have to answer 'y' to complete the destruction</p>
 
 ```
-C:\Users\panikm\Dropbox\EMC\git\Vagrant_Ansible_Class>vagrant destroy
+C:\Users\panik\Dropbox\EMC\git\Vagrant_Ansible_Class>vagrant destroy
     default: Are you sure you want to destroy the 'default' VM? [y/N] y
 ==> default: Forcing shutdown of VM...
 ==> default: Destroying VM and associated drives...
