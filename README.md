@@ -1,71 +1,63 @@
 # Vagrant_Ansible_Class
-Basic class on Ansible using Vagrant and Virtualbox
+Basic class on Ansible using Vagrant and Virtualbox.
 
-<h1>Introduction</h1>
+## Introduction
 
-<p>Vagrant designed to run through multiple platforms including currently Mac OS X, Microsoft Windows, Debian, Ubuntu, CentOS, RedHat and Fedora, in this document we will handle how to configure and run virtual development environment through Vagrant from scratch to up and running, on Windows environments.</p>
+Vagrant is designed to automatically & repeatedly provision development environments on multiple platforms, including Mac OS X, Microsoft Windows, Debian, Ubuntu, CentOS, RedHat and Fedora. In this document we will handle how to configure and run a virtual development environment through Vagrant from scratch to up and running, on Windows environments.
 
-<p> VirtualBox is an Oracle product that allows you to run virtual guests on your machine for development.  Vagrant understands how to call VirtualBox to create an instance on a private network, behind a NAT, on your machine so you can easily do development </p>
-
-
-<h1>Installing the Development Windows Environment</h1>
-
-<p>To install our environment we should follow the below sections in order</p>
-
-<p>Installing Vagrant</p>
-
-<p>Installing Git </p>
-
-<p>Installing Virtualbox</p>
-
-<p>Installing Putty</p>
+VirtualBox is an Oracle product that allows you to run virtual guests on your machine for development.  Vagrant understands how to call VirtualBox to create an instance on a private network [NAT](https://computer.howstuffworks.com/nat.htm) on your machine so you can easily do development work.
 
 
-<h2>Installing Vagrant</h2>
+## Installing the Windows development Environment
 
-<p>First thing, you need to download vagrant setup from <a href="http://www.vagrantup.com/downloads.html">http://www.vagrantup.com/downloads.html</a>, and then run it.</p>
+To install our environment we should follow the below sections in order:
 
-<p>Setup wizard is straightforward, just it will ask to accept license agreement and the path to install, as you will need to use command line, please choose short path as you can, for example in our case, we will use “D:\Vagrant”, it might ask you to restart at the end of setup.</p>
+1. Installing Vagrant
+1. Installing Git
+1. Installing Virtualbox
+1. Installing Putty
 
-<p>The setup here is some longer but if you just click “Next” without any changes, it will be fine.</p>
+### Installing Vagrant
 
-<h2>Installing Git</h2>
+First, you need to download Vagrant setup from [http://www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html), and then run it.
 
-<p>Download Git command line setup from <a href="https://github.com/git-for-windows/git/releases">https://github.com/git-for-windows/git/releases</a>, and then run it.</p>
+The setup wizard is straightforward -- it will ask you to accept the license agreement and the path to install. Since you will need to use command line, you may want to choose a short path. For example in our case, we will use `D:\Vagrant`. The installer may ask you to restart at the end of setup.
 
-<p> Alternative <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> </p>
+### Installing Git
 
-<p>You may need to update your path so that you can find git on the command line</p>
+Download Git command line setup from [https://github.com/git-for-windows/git/releases](https://github.com/git-for-windows/git/releases), and then run it.
 
-<p>On windows 10 go to this url for help:  <a href="https://www.java.com/en/download/help/path.xml">https://www.java.com/en/download/help/path.xml</a></p>
+Alternative: [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
-<h2>Installing VirtualBox</h2>
+You may need to update your PATH so that you can find git on the command line. On windows 10 go to this URL for help:  [https://www.java.com/en/download/help/path.xml](https://www.java.com/en/download/help/path.xml)
 
-<p>You need now to download VirtualBox, use the following link to download the latest release of VirtualBox <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
+### Installing VirtualBox
 
-<p>The setup here is some longer but if you just click “Next” without any changes, it will be fine.</p>
+You need now to download VirtualBox, use the following link to download the latest release of VirtualBox [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
-<h2>Installing Putty</h2>
+The setup here is somewhat long, but if you just click “Next” without any changes, it will be fine.
 
-<p>You need now to download Putty, use the following link to download the latest release of Putty <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</a></p>
+### Installing Putty
 
-<h1> Creating your Vagrant VM</h1>
+You now need to download and install Putty. Use the following link to download the latest release of Putty [https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
-<p>Now that we have everything installed we need to download the required Vagrant files</p>
+## Creating your Vagrant VM
 
-<h2>Download the class material via git</h2>
+Now that we have everything installed we need to download the required Vagrant files.
 
-<p>From a new or exsisting directory i.e c:/Users/Panik/Downloads and on the command line run this command: 'git clone https://github.com/pnkmtt/Vagrant_Ansible_Class'</p>
+### Download the class material via git
 
-<p>This will download the Vagrant file and allow us to create your new VirtualBox VM in a directory called Vagrant_Ansible_Class</p>
+From a new or existing directory (i.e. `C:\Users\Panik\Downloads`) on the command line, run this command: `git clone https://github.com/pnkmtt/Vagrant_Ansible_Class`
 
-<p>Once the clone has completed, 'cd' to the target directory, For example cd c:/User/panik/Downloads/Vagrant_Ansible_Class</p>
+This will download the Vagrant file and allow us to create your new VirtualBox VM in a directory called Vagrant_Ansible_Class.
 
-<p>We will now create our VM based on the downloaded files, run the command 'vagrant up' compare to the output below</p>
+Once the clone has completed, `cd` to the target directory, For example `cd C:\User\panik\Downloads\Vagrant_Ansible_Class`
 
-<p>You may have to approve the creation of a network adapter on your system say yes to any questions, this does not compromise your OS in any way</p>
+We will now create our VM based on the downloaded files, run the command `vagrant up`. The output should be similar to the example below.
 
-Example output from 'vagrant up'
+You may have to approve the creation of a network adapter on your system -- say yes to any questions, as this does not compromise your OS in any way.
+
+Example output from `vagrant up`:
 
 ```
 C:\Users\panik\Dropbox\git\Vagrant_Ansible_Class>Bringing machine 'default' up with 'virtualbox' provider...
@@ -116,24 +108,21 @@ C:\Users\panik\Dropbox\git\Vagrant_Ansible_Class>Bringing machine 'default' up w
 
 ```
 
-<h2> Accessing your new VirtualBox based VM </h2>
+## Accessing your new VirtualBox-based VM
 
-<p>  Now that the instances is up ssh into the VM via putty.  The host information is 127.0.0.1 and the port is 2222, the user is vagrant, the password is vagrant. </p>
+Now that the instances is up, ssh into the VM via putty. The host information is 127.0.0.1 and the port is 2222; the user is 'vagrant'; and the password is 'vagrant'.
 
-<h2>Installing Ansible on your new VM</h2>
+## Installing Ansible on your new VM
 
-<p>We npw need to install ansible on our new host.  Run the following set of commands to install Ansible and its dependicies. I did not automate this process to show the package install process </p>
+We now need to install Ansible on our new host. Run the following set of commands to install Ansible and its dependencies. In the interest of demonstrating these steps, I did not automate the install process with Vagrant.
 
 ```
-sudo apt-get update -y
-sudo apt-get install software-properties-common -y
-sudo apt-get install python-software-properties -y
 sudo apt-add-repository ppa:ansible/ansible -y
-sudo apt-get update
-sudo apt-get install ansible -y
+sudo apt-get update -y
+sudo apt-get install software-properties-common python-software-properties ansible -y
 ```
 
-<p>To make sure ansible is installed run 'ansible --version'</p>
+To make sure Ansible is installed run `ansible --version`
 
 ```
 vagrant@myxenial64:/vagrant$ ansible --version
@@ -142,17 +131,17 @@ ansible 2.0.0.2
   configured module search path = Default w/o overrides
 ```
 
-<p>We now have a working ansible install</p>
+We now have a working Ansible install.
 
-<h2>Running our first ansible playbook</h2>
+## Running our first Ansible playbook
 
-<p>Ansible as a configuration tool uses ssh to access the hosts that it configures.  Since we are doing this on the newly created VM, we will be sshing to the localhost and configuring our applications.</p>
+Ansible uses ssh to access the hosts that it configures. Since we are doing this on the newly created VM, we will be ssh'ing to the localhost and configuring our applications.
 
-<p>In order to this we need to take a setp to generate an sshkey for the vagrant user and put it in the authorized_keys file. The below example shows the creation of an RSA ssh key and the population of the vagrant user authorized_keys file.</p>
+In order to this we need to take a step to generate an ssh key for the vagrant user and put it in the authorized_keys file. The below example shows the creation of an RSA ssh key and the population of the vagrant user authorized_keys file.
 
-<p>As the vagrant user run 'ssh-keygen -t rsa' and accept the defaults.  Once complete copy the newly generated RSA public key into the vagrant users authorized_keys file. Run the command 'cat .ssh/id_rsa.pub > .ssh/authorized_keys'  Note: this is not how you would manage the key files in production, but we are using sudo which is perfered over direct root access</p>
+As the vagrant user run `ssh-keygen -t rsa` and accept the defaults.  Once complete, copy the newly generated RSA public key into the vagrant user's authorized_keys file. Run the command `cat .ssh/id_rsa.pub > .ssh/authorized_keys`.  Note: this is not how you would manage the key files in production, but we are using sudo which is preferred over direct root access.
 
-<p>To test the connection ssh to the localhost and you will not need a password 'ssh localhos'.  Exit once you have confirmed access.</p>
+To test the connection ssh to the localhost and you will not need a password `ssh localhost`.  Exit once you have confirmed access.
 
 ```
 vagrant@myxenial64:~$ ssh-keygen -t rsa
@@ -193,42 +182,32 @@ logout
 Connection to localhost closed.
 ```
 
-<h2>Accessing our Ansible Files</h2>
+## Accessing our Ansible Files
 
-<p>The VM has mounted your working directy as a partition it can acess.  This can be found under /vagrant.  Run 'cd /vagrant' to enter this directory</p>
+The VM has mounted your working directory as a partition it can access.  This can be found under /vagrant.  Run `cd /vagrant` to enter this directory.
 
-<p>In this directory you will fine several files that allow ansible to configure a host for apache, mariaDB, and populates configuration files to allow apache to store and access data within the database.</p>
+In this directory you will find several files that allow Ansible to configure a host with Apache (a web server), MariaDB (a MySQL database fork), and populates configuration files to allow Apache to store and access data within the database.
 
-```
-hosts - lists all ansible hosts and configuration parameters such as ssh keys
+* `hosts` - lists all Ansible hosts and configuration parameters such as ssh keys
+playbook.yml - base Ansible playbook that details what roles to install on specific hosts, in our case the list is 'all'
+* `roles` - directory that holds application definitions
+* `roles\apache2` - top level of the apache2 role
+* `roles\apache2\tasks` - contains yml files that tell Ansible what action to take
+* `roles\apache\files` - contains files that can be copied to the remote hosts
+* `roles\mariadb\tasks` - contains yml files that tell Ansible what action to take
+* `roles\mariadb\files` - contains files that can be copied to the remote hosts
 
-playbook.yml - base ansible playbook that details what roles to install on specific hosts, in our case the list is 'all'
+To have Ansible install Apache and MariaDB, run this command `ansible-playbook -i hosts playbook.yml --sudo`. You will have to accept the ssh key on first access.
 
-roles - directory that holds application definitions
+Pay attention to the output and you will see each step being taken to configure the applications, insert data, and allow Apache to access MariaDB.
 
-roles\apache2 - top level of the apache2 role
+Once the playbook is complete, in your local browser type in the URL `http://localhost:8888/db.php`.  The response comes from the backend MariaDB.
 
-roles\apache2\tasks - contains yml files that tell ansible what action to take
+# Clean up your Vagrant install
 
-roles\apache\files - contains files that can be copied to the remote hosts
+When you are ready to finish the exercise you should remove your VM.
 
-roles\mariadb\tasks - contains yml files that tell ansible what action to take
-
-roles\mariadb\files - contains files that can be copied to the remote hosts
-
-```
-
-<p>To have ansible install apache and mariadb run this command 'ansible-playbook -i hosts playbook.yml --sudo' you will have to accept the ssh key on first access.</p>
-
-<p>Pay attention to the output and you will see each step being taken to confiugre the applications, insert data, and allow apache to access mariadb.</p>
-
-<p>Once the playbook is complete in your local browser put in the url http://localhost:8888/db.php.  The response comes from the backend mariadb</p>
-
-<h1>Clean up your Vagrant install</h1>
-
-<p>When you are ready to finish the exercise you should remove your VM</p>
-
-<p>In order to do this run the follow command from the original directory 'vagrant destroy'  you will have to answer 'y' to complete the destruction</p>
+In order to do this run the follow command from the original directory `vagrant destroy`. You will have to answer `y` to complete the destruction.
 
 ```
 C:\Users\panik\Dropbox\git\Vagrant_Ansible_Class>vagrant destroy
@@ -236,5 +215,3 @@ C:\Users\panik\Dropbox\git\Vagrant_Ansible_Class>vagrant destroy
 ==> default: Forcing shutdown of VM...
 ==> default: Destroying VM and associated drives...
 ```
-
-
