@@ -128,7 +128,7 @@ C:\Users\panik\Dropbox\git\Vagrant_Ansible_Class>Bringing machine 'default' up w
 sudo apt-get update -y
 sudo apt-get install software-properties-common -y
 sudo apt-get install python-software-properties -y
-sudo apt-add-repository ppa:ansible/ansible
+sudo apt-add-repository ppa:ansible/ansible -y
 sudo apt-get update
 sudo apt-get install ansible -y
 ```
@@ -149,6 +149,10 @@ ansible 2.0.0.2
 <p>Ansible as a configuration tool uses ssh to access the hosts that it configures.  Since we are doing this on the newly created VM, we will be sshing to the localhost and configuring our applications.</p>
 
 <p>In order to this we need to take a setp to generate an sshkey for the vagrant user and put it in the authorized_keys file. The below example shows the creation of an RSA ssh key and the population of the vagrant user authorized_keys file.</p>
+
+<p>As the vagrant user run 'ssh-keygen -t rsa' and accept the defaults.  Once complete copy the newly generated RSA public key into the vagrant users authorized_keys file. Run the command 'cat .ssh/id_rsa.pub > .ssh/authorized_keys'  Note: this is not how you would manage the key files in production, but we are using sudo which is perfered over direct root access</p>
+
+<p>To test the connection ssh to the localhost and you will not need a password 'ssh localhos'.  Exit once you have confirmed access.</p>
 
 ```
 vagrant@myxenial64:~$ ssh-keygen -t rsa
@@ -214,11 +218,13 @@ roles\mariadb\files - contains files that can be copied to the remote hosts
 
 ```
 
-<p>To have ansible install apache and mariadb run this command 'ansible-playbook -i hosts playbook.yml --sudo'</p>
+<p>To have ansible install apache and mariadb run this command 'ansible-playbook -i hosts playbook.yml --sudo' you will have to accept the ssh key on first access.</p>
 
 <p>Pay attention to the output and you will see each step being taken to confiugre the applications, insert data, and allow apache to access mariadb.</p>
 
 <p>Once the playbook is complete in your local browser put in the url http://localhost:8888/db.php.  The response comes from the backend mariadb</p>
+
+<p>If you run the playbook again you will notice that ansible checks all the configurations for changes, but will take no action normally</p>
 
 <h1>Clean up your Vagrant install</h1>
 
