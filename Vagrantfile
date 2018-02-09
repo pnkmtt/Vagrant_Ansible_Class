@@ -8,9 +8,9 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "v0rtex/xenial64-iso"
-  #config.vm.box = "ubuntu/xenial64"
   config.vm.hostname = "myxenial64.box"
   config.vm.network :private_network, ip: "192.168.0.42"
+  config.vm.network "forwarded_port", guest: 80, host: 8080
 
   config.vm.provider :virtualbox do |vb|
     vb.customize [
