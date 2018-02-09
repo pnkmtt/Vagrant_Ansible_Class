@@ -224,8 +224,6 @@ roles\mariadb\files - contains files that can be copied to the remote hosts
 
 <p>Once the playbook is complete in your local browser put in the url http://localhost:8888/db.php.  The response comes from the backend mariadb</p>
 
-<p>If you run the playbook again you will notice that ansible checks all the configurations for changes, but will take no action normally</p>
-
 <h1>Clean up your Vagrant install</h1>
 
 <p>When you are ready to finish the exercise you should remove your VM</p>
