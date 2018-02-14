@@ -10,11 +10,9 @@ Basic class on Ansible using Vagrant and Virtualbox
 
 <h1>Installing the Development Windows Environment</h1>
 
-<p>To install our environment we should follow the below sections in order</p>
+<p>To install our environment we should follow the below sections in order:</p>
 
 <p>Installing Vagrant</p>
-
-<p>Installing Git </p>
 
 <p>Installing Virtualbox</p>
 
@@ -28,16 +26,6 @@ Basic class on Ansible using Vagrant and Virtualbox
 <p>Setup wizard is straightforward, just it will ask to accept license agreement and the path to install, as you will need to use command line, please choose short path as you can, for example in our case, we will use “D:\Vagrant”, it might ask you to restart at the end of setup.</p>
 
 <p>The setup here is some longer but if you just click “Next” without any changes, it will be fine.</p>
-
-<h2>Installing Git</h2>
-
-<p>Download Git command line setup from <a href="https://github.com/git-for-windows/git/releases">https://github.com/git-for-windows/git/releases</a>, and then run it.</p>
-
-<p> Alternative <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> </p>
-
-<p>You may need to update your path so that you can find git on the command line</p>
-
-<p>On windows 10 go to this url for help:  <a href="https://www.java.com/en/download/help/path.xml">https://www.java.com/en/download/help/path.xml</a></p>
 
 <h2>Installing VirtualBox</h2>
 
