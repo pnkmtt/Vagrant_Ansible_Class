@@ -12,6 +12,7 @@ VirtualBox is an Oracle product that allows you to run virtual guests on your ma
 
 To install our environment we should follow the below sections in order:
 
+
 1. Installing Vagrant
 1. Installing Git
 1. Installing Virtualbox
@@ -20,6 +21,7 @@ To install our environment we should follow the below sections in order:
 ### Installing Vagrant
 
 First, you need to download Vagrant setup from [http://www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html), and then run it.
+
 
 The setup wizard is straightforward -- it will ask you to accept the license agreement and the path to install. Since you will need to use command line, you may want to choose a short path. For example in our case, we will use `D:\Vagrant`. The installer may ask you to restart at the end of setup.
 
@@ -33,6 +35,7 @@ You may need to update your PATH so that you can find git on the command line. O
 
 ### Installing VirtualBox
 
+
 You need now to download VirtualBox, use the following link to download the latest release of VirtualBox [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 The setup here is somewhat long, but if you just click “Next” without any changes, it will be fine.
@@ -44,6 +47,7 @@ You now need to download and install Putty. Use the following link to download t
 ## Creating your Vagrant VM
 
 Now that we have everything installed we need to download the required Vagrant files.
+
 
 ### Download the class material via git
 
