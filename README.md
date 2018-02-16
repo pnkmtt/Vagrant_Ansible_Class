@@ -205,7 +205,7 @@ To have Ansible install Apache and MariaDB, run this command `ansible-playbook -
 
 Pay attention to the output and you will see each step being taken to configure the applications, insert data, and allow Apache to access MariaDB.
 
-Once the playbook is complete, in your local browser type in the URL `http://localhost:8888/db.php`.  The response comes from the backend MariaDB.
+Once the playbook is complete, in your local browser type in the URL `http://localhost:8080/db.php`.  The response comes from the backend MariaDB.
 
 # Clean up your Vagrant install
 
