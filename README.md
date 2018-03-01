@@ -207,6 +207,10 @@ Pay attention to the output and you will see each step being taken to configure 
 
 Once the playbook is complete, in your local browser type in the URL `http://localhost:8080/db.php`.  The response comes from the backend MariaDB.
 
+### Error in Apache Role
+
+There is a wrong setting in the main.yml file under the role Apache.  Find what is wrong, rerun ansible, and you should be able to now reach the webserver and connect to the web page.
+
 # Clean up your Vagrant install
 
 When you are ready to finish the exercise you should remove your VM.
