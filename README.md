@@ -33,6 +33,14 @@ Alternative: [https://git-scm.com/download/win](https://git-scm.com/download/win
 
 You may need to update your PATH so that you can find git on the command line. On windows 10 go to this URL for help:  [https://www.java.com/en/download/help/path.xml](https://www.java.com/en/download/help/path.xml)
 
+Windows 10 and Windows 8
+1. In Search, search for and then select: System (Control Panel)
+2. Click the Advanced System Settings link on the left.
+3. Click Environment Variables. In the section System Variables, find the PATH environment variable and select it. Click Edit. If the PATH environment variable does not exist, click New.
+4. Enter the following path 'C:\Program Files\Git\bin' and 'C:\Users\panikm\AppData\Local\GitHubDesktop\bin' if they are not already there, this should be where git installed its packages and binaries.
+5. In the Edit System Variable (or New System Variable) window, specify the value of the PATH environment variable. Click OK. Close all remaining windows by clicking OK.
+6. Reopen Command prompt window, and run 'git'.
+
 ### Installing VirtualBox
 
 
