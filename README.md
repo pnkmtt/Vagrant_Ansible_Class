@@ -7,6 +7,14 @@ Vagrant is designed to automatically & repeatedly provision development environm
 
 VirtualBox is an Oracle product that allows you to run virtual guests on your machine for development.  Vagrant understands how to call VirtualBox to create an instance on a private network [NAT](https://computer.howstuffworks.com/nat.htm) on your machine so you can easily do development work.
 
+Git is a suite of tools that allows developers to check out code, update it, then merge it back into what is called a trunk or master branch.  This is a very popular way to manage code in a multi-member team or even if you do it alone.  Follow the link for a short explanation on how Git works.
+
+https://guides.github.com/introduction/flow/
+
+Ansible is an open-source automation engine that automates software provisioning, configuration management, and application deployment. Ansible lets you control and configure nodes from a single machine. What makes it different from other management software is that Ansible uses  SSH infrastructure. Ansible uses push mode, where the configuration is pushed from a master machine to nodes.
+
+A basic overview can be found at this link: https://blog.knoldus.com/2017/09/01/introduction-to-ansible/
+
 IMPORTANT NOTE: You must have virtualization enabled in your bios!  Please reach out if you need help with this step. 
 
 Here is an example of doing it on a Lenovo: https://amiduos.com/support/knowledge-base/article/enabling-virtualization-in-lenovo-systems
