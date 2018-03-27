@@ -140,9 +140,10 @@ Now that the instances is up, ssh into the VM via putty. The host information is
 We now need to install Ansible on our new host. Run the following set of commands to install Ansible and its dependencies. In the interest of demonstrating these steps, I did not automate the install process with Vagrant.
 
 ```
-sudo apt-add-repository ppa:ansible/ansible -y
 sudo apt-get update -y
-sudo apt-get install software-properties-common python-software-properties ansible -y
+sudo apt-get install software-properties-common python-software-properties -y
+sudo apt-add-repository ppa:ansible/ansible -y 
+sudo apt-get install ansible -y
 ```
 
 To make sure Ansible is installed run `ansible --version`
