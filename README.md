@@ -7,6 +7,9 @@ Vagrant is designed to automatically & repeatedly provision development environm
 
 VirtualBox is an Oracle product that allows you to run virtual guests on your machine for development.  Vagrant understands how to call VirtualBox to create an instance on a private network [NAT](https://computer.howstuffworks.com/nat.htm) on your machine so you can easily do development work.
 
+IMPORTANT NOTE: You must have virtualization enabled in your bios!  Please reach out if you need help with this step. 
+
+Here is an example of doing it on a Lenovo: https://amiduos.com/support/knowledge-base/article/enabling-virtualization-in-lenovo-systems
 
 ## Installing the Windows development Environment
 
